@@ -30,16 +30,19 @@ header .navigation {
     display: flex;
    justify-content: space-between;
     align-items: center;
-
 }
 
+.responsive img {
+    padding-left: 7vw;
+}
 button {
     width: 7vw;
     height: 3rem;
     color:#38d2d7;
     background-color: white;
     border: transparent;
-    font-size: 1.5rem;
+    font-size: 3rem;
+    padding-right: 15vw;
 }
 .menu-responsive {
     display: grid;
@@ -100,10 +103,11 @@ button {
 
 .header-responsive-bis p {
     font-family: "open";
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    text-align: justify;
+    margin-bottom: 2rem;
+    text-align: justifyle;
 }
 
 footer {
@@ -160,8 +164,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-family: "beriot-bold";
-    font-size: 1rem;
-    
+    font-size: 1rem;    
+}
+
+.desktop img {
+    margin-left: 2vw;
 }
 .menu {
     display: flex;
