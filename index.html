@@ -103,14 +103,14 @@
         <h3>La syntaxe</h3>
         <p>
           Le code PHP est délimité par la balise d’ouverture
-          <?php et de fermeture ?>.
+          &#60;?php et de fermeture ?>.
         </p>
         <p>Elles permettent à PHP d’être intégré à toute forme de document.</p>
         <p>
           Tout ce qui se trouve en dehors de ces balises est ignoré par PHP.
         </p>
         <p>
-          On retrouve aussi un point-virgule ; avant la fermante afin de marquer
+          On retrouve aussi un point-virgule ; avant la balise fermante afin de marquer
           la fin de l’instruction.
         </p>
         <p>Il existe aussi d’autre balises PHP par exemple < ? ?>, <% %>.</p>
@@ -148,6 +148,7 @@
         <p>Une variable est toujours constituée de deux éléments :</p>
         <p>Un nom : Il servira à reconnaître la variable.</p>
         <p>Une valeur : C’est l’information que la variable contient.</p>
+        <p>Elles sont déclarées pas un dollar $, suivi de leur nom.</p>
 
         <h4>Les différents types de variables</h4>
         <p>
@@ -192,10 +193,9 @@
 
     <section class="operateur">
       <article>
-        <!-- METTRE UN BLOC A GAUCHE ET UN A DROITE  -->
+          <h3>Les opérateurs</h3>   
         <div class="operateur-grid">
           <div class="tableau">
-            <h3>Les opérateurs</h3>
             <h4>Les opérateurs arithmériques</h4>
             <p>Permettent de réaliser des opérations mathématiques.</p>
             <table>
@@ -233,6 +233,51 @@
                 <td>%</td>
                 <td>Modulo</td>
                 <td>$a % $b</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="tableau">
+            <h4>Les opérateurs logiques</h4>
+            <p>
+              Permettent de définir des expressions qui renvoient un booléen
+              TRUE ou FALSE.
+            </p>
+            <table>
+              <tr>
+                <td>Opérateur</td>
+                <td>Opération</td>
+                <td>Exemple</td>
+              </tr>
+              <tr>
+                <td>&&</td>
+                <td>ET</td>
+                <td>$a && $b</td>
+              </tr>
+              <tr>
+                <td>AND</td>
+                <td>ET</td>
+                <td>$a AND $b</td>
+              </tr>
+              <tr>
+                <td>||</td>
+                <td>OU</td>
+                <td>$a || $b</td>
+              </tr>
+              <tr>
+                <td>OR</td>
+                <td>OU</td>
+                <td>a$ OR $b</td>
+              </tr>
+              <tr>
+                <td>XOR</td>
+                <td>OU exclusif</td>
+                <td>$a XOR $b</td>
+              </tr>
+              <tr>
+                <td>!</td>
+                <td>NON</td>
+                <td>!$a</td>
               </tr>
             </table>
           </div>
@@ -308,51 +353,6 @@
                 <td>>=</td>
                 <td>Supériorité ou égalité</td>
                 <td>$a >= $b</td>
-              </tr>
-            </table>
-          </div>
-
-          <div class="tableau">
-            <h4>Les opérateurs logiques</h4>
-            <p>
-              Permettent de définir des expressions qui renvoient un booléen
-              TRUE ou FALSE.
-            </p>
-            <table>
-              <tr>
-                <td>Opérateur</td>
-                <td>Opération</td>
-                <td>Exemple</td>
-              </tr>
-              <tr>
-                <td>&&</td>
-                <td>ET</td>
-                <td>$a && $b</td>
-              </tr>
-              <tr>
-                <td>AND</td>
-                <td>ET</td>
-                <td>$a AND $b</td>
-              </tr>
-              <tr>
-                <td>||</td>
-                <td>OU</td>
-                <td>$a || $b</td>
-              </tr>
-              <tr>
-                <td>OR</td>
-                <td>OU</td>
-                <td>a$ OR $b</td>
-              </tr>
-              <tr>
-                <td>XOR</td>
-                <td>OU exclusif</td>
-                <td>$a XOR $b</td>
-              </tr>
-              <tr>
-                <td>!</td>
-                <td>NON</td>
-                <td>!$a</td>
               </tr>
             </table>
           </div>
