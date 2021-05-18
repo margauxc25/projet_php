@@ -23,21 +23,31 @@
     src: url(fonts/open-sans-italic.ttf);
 }
 
-/* @media (max-width: 768px) { */
-header {
-   width: 100vw;
-}
+
 
 
 header .navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+
 }
 
+button {
+    width: 7vw;
+    height: 3rem;
+    color:#38d2d7;
+    background-color: white;
+    border: transparent;
+    font-size: 1.5rem;
+}
 .menu-responsive {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.display-none {
+    display: none;
 }
 
 .menu-responsive li {
@@ -73,6 +83,63 @@ header .navigation {
     background: #38d2d7;
 }
 
+.header-responsive-bis div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-responsive-bis h1 {
+    font-family: "beriot-bold";
+    color: #2e2f32;
+    font-size: 2rem;
+}
+.header-responsive-bis img {
+    width: 40vw;
+}
+
+.header-responsive-bis p {
+    font-family: "open";
+    font-size: 0.8rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: justify;
+}
+
+footer {
+    height: 15vh;
+    background-color : #231f20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.developpeurs {
+    color: white;
+    font-family: "beriot-bold";
+    font-size:1rem;
+    margin-left: 2vw;
+}
+
+.developpeurs span {
+    font-family: "open";
+    font-size: 0.8rem;
+}
+
+.developpeurs a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 0.7rem;
+    text-align: end;
+    margin-right: 2vw;
+}
 .desktop {
     display: none;
 }
@@ -93,7 +160,7 @@ header .navigation {
     justify-content: space-between;
     align-items: center;
     font-family: "beriot-bold";
-    font-size: 1.5rem;
+    font-size: 1rem;
     
 }
 .menu {
@@ -107,6 +174,10 @@ nav {
     list-style-type: none;
     padding-left : 1vw;
     padding-right : 1vw;
+}
+
+.menu li :hover {
+    color : #1393a3;  
 }
 
 .menu li a {
@@ -135,12 +206,14 @@ h1 {
     width: 40vw;
     font-family: "open";
     margin-top : 9vh;
+    margin-bottom : 9vh;
+    font-size: 1.5rem;
 }
 
 .container-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 99vw;
+    
 }
 .card1 {
     background-color : #231f20;
@@ -177,36 +250,23 @@ h1 {
     padding-right: 1.8rem;
     font-size: 1.5rem;
     text-align: center;
-
-}
-
-}
-
-
-footer {
-    height: 15vh;
-    background-color : #231f20;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .developpeurs {
-    color: white;
-    font-family: "beriot-bold";
-    font-size: 1rem;
-    margin-left: 2vw;
+    font-size: 3rem;
 }
-
 .developpeurs span {
-    font-family: "open";
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+}
+}
+.developpeurs span :hover {
+    font-size: 2rem;
+    color: #13b8be;
+}
+.copyright {
+    font-size: 1rem;
 }
 
-.copyright {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 0.7rem;
-    text-align: end;
-    margin-right: 2vw;
 }
+
+
