@@ -23,7 +23,7 @@
     src: url(fonts/open-sans-italic.ttf);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
 header {
    width: 100vw;
 }
@@ -76,12 +76,16 @@ header .navigation {
 .desktop {
     display: none;
 }
-}
 
-@media (min-width: 768px) {
+
+@media (min-width: 769px) {
 
 .responsive {
     display: none;
+}
+
+.desktop {
+    display: contents;
 }
 
 .navigation-desktop {
@@ -116,8 +120,7 @@ hr {
 
 .container-headerbis {
     display: flex;
-    justify-content: space-around;
-   
+    justify-content: space-around;  
 }   
 
 h1 {
@@ -142,37 +145,41 @@ h1 {
 .card1 {
     background-color : #231f20;
     height: 40vh;
+    display: flex;
+    align-items: center;
 }
 
 .card2 {
     background-color: #1393a3;
     height: 40vh;
+    display: flex;
+    align-items: center;
 }
 
 .card3 {
     background-color: #13b8be;
     height: 40vh;
+    display: flex;
+    align-items: center;
 }
 
 .card4 {
     background-color: #38d2d7;
     height: 40vh;
+    display: flex;
+    align-items: center;
 }
 
 .card-paragraphe{
     color: white;
     font-family: "open";
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    font-size: 1.5rem;
+    text-align: center;
+
 }
 
-.container-cards h2 {
-    font-family: "beriot-bold";
-    color: white;
-    padding-top: 1rem;
-    font-size: 3rem;
-    text-align: center;
-}
 }
 
 
