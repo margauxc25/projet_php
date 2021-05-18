@@ -14,12 +14,15 @@
 <body>
     <!-- début du header -->
     <header>
+        <div class="responsive">
+            <div class="navigation">
+                <img src="images/logo.svg" alt="logo du site M R M, les 2 M sont en noir et le R est en bleu">
 
-        <img src="images/logo.svg" alt="logo du site M R M, les 2 M sont en noir et le R est en bleu">
-        <div id="menu-burger">
-            <!-- menu burger avec un bouton de type onclick -->
-            <button type="onclick"><i class="fas fa-bars"></i></button>
-            <ul>
+                <!-- menu burger avec un bouton de type onclick -->
+                <button type="onclick"> <span><i class="fas fa-bars"></i>Menu</span>
+                </button>
+            </div>
+            <ul class="menu-responsive">
                 <li class="black"><a href="">La syntaxe</a></li>
                 <li class="blue"><a href="">Les variables</a></li>
                 <li class="turquoise"><a href="">Les constantes</a></li>
@@ -30,16 +33,65 @@
                 <li class="black"><a href="">Les fonctions</a></li>
             </ul>
         </div>
+        <div class="desktop">
+            <div class="navigation-desktop">
+                <img src="images/logo.svg" alt="logo du site M R M, les 2 M sont en noir et le R est en bleu">
+                <nav class="menu">
+                    <li><a href=""> Syntaxe</a></li>
+                    <li><a href=""> Variables</a></li>
+                    <li><a href=""> Constantes</a></li>
+                    <li><a href=""> Opérateurs</a></li>
+                    <li><a href=""> Conditions</a></li>
+                    <li><a href=""> Tableaux</a></li>
+                    <li><a href=""> Boucles</a></li>
+                    <li><a href=""> Fonctions</a></li>
+                </nav>
+            </div>
+            <hr>
+            <div class="container-headerbis">
+                <div class="container-paragraphe">
+                    <h1>PHP</h1>
+                    <p class="main-paragraphe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vel
+                        voluptas repellendus vero qui culpa modi molestias excepturi suscipit explicabo quibusdam
+                        doloremque, adipisci perspiciatis, laborum sapiente soluta deleniti! Laudantium, temporibus.</p>
+                </div>
+                <img src="images/php.png" alt="logo p h p en noir et blanc">
+            </div>
+            <div class="container-cards">
+                <div class = "card1">
+                    <h2>Titre 1</h2>
+                    <p class = "card-paragraphe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quibusdam necessitatibus tenetur accusamus quos officiis assumenda atque hic porro, ipsa nulla.</p>
+                </div>
+                <div class = "card2">
+                    <h2>Titre 2</h2>
+                    <p class="card-paragraphe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quibusdam necessitatibus tenetur accusamus quos
+                    officiis assumenda atque hic porro, ipsa nulla</p>
+                </div>
+                <div class = "card3">
+                    <h2>
+                        titre3
+                    </h2>
+                    <p class="card-paragraphe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quibusdam necessitatibus tenetur accusamus quos
+                    officiis assumenda atque hic porro, ipsa nulla</p>
+                </div>
+                <div class = "card4">
+                    <h2>Titre 4</h2>
+                    <p class="card-paragraphe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quibusdam necessitatibus tenetur accusamus quos
+                    officiis assumenda atque hic porro, ipsa nulla</p>
+                </div>
+    
+            </div>
+        </div>
     </header>
 
 
-<!-- début du footer -->
+    <!-- début du footer -->
     <footer>
-        <p class = developpeurs>
-            Développeurs 
-            <span> Margaux Coppi - </span><span>Raphaël Dorce -  </span><span>Manon Mille</span>
+        <p class=developpeurs>
+            Développeurs
+            <span> Margaux Coppi - </span><span>Raphaël Dorce - </span><span>Manon Mille</span>
         </p>
-        <p class = "copyright">
+        <p class="copyright">
             &copy 2021 MRM - All Rights Reserved
         </p>
     </footer>

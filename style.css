@@ -23,27 +23,24 @@
     src: url(fonts/open-sans-italic.ttf);
 }
 
-
+@media (max-width: 768px) {
 header {
    width: 100vw;
-   display: flex;
-   justify-content: center;
-   align-items: flex-start;
-   flex-direction: column;
-}
-
-header img {
-    width: 10vw;
 }
 
 
-ul {
+header .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-responsive {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
 
-li {
+.menu-responsive li {
     list-style-type: none;
     width: 25vw;
     height:15vh;
@@ -54,9 +51,9 @@ li {
     font-family: "beriot";
 }
 
-li a {
+.menu-responsive li a {
     text-decoration: none;
-    color: white;    
+    color :white;    
 }
 
 /* couleur des carrés du menu burger */
@@ -76,15 +73,117 @@ li a {
     background: #38d2d7;
 }
 
+.desktop {
+    display: none;
+}
+}
+
+@media (min-width: 768px) {
+
+.responsive {
+    display: none;
+}
+
+.navigation-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "beriot-bold";
+    font-size: 1.5rem;
+    
+}
+.menu {
+    display: flex;
+}
+
+nav {
+    padding-right: 2vw;
+}
+.menu li {
+    list-style-type: none;
+    padding-left : 1vw;
+    padding-right : 1vw;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #2e2f32;
+}
+
+hr {
+    border-top : 0.1rem solid #38d2d7
+}
+
+.container-headerbis {
+    display: flex;
+    justify-content: space-around;
+   
+}   
+
+h1 {
+    font-family: "beriot-bold";
+    font-size: 7rem;
+    color : #2e2f32;
+    margin-top : 9vh;   
+}
+
+
+.main-paragraphe {
+    width: 40vw;
+    font-family: "open";
+    margin-top : 9vh;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 99vw;
+}
+.card1 {
+    background-color : #231f20;
+    height: 40vh;
+}
+
+.card2 {
+    background-color: #1393a3;
+    height: 40vh;
+}
+
+.card3 {
+    background-color: #13b8be;
+    height: 40vh;
+}
+
+.card4 {
+    background-color: #38d2d7;
+    height: 40vh;
+}
+
+.card-paragraphe{
+    color: white;
+    font-family: "open";
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-cards h2 {
+    font-family: "beriot-bold";
+    color: white;
+    padding-top: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+}
+
 
 footer {
-    width: 100vw;
     height: 15vh;
     background-color : #231f20;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .developpeurs {
     color: white;
     font-family: "beriot-bold";
