@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.fa-circle {
+  font-size: 0.5rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+.text {
+  background: lightblue;
+}
+
+.code {
+  background: lightgray;
+}
