@@ -96,8 +96,6 @@ section {
   border-radius: 10px;
 }
 
-
-
 /* syntaxe */
 
 .syntaxe {
@@ -241,12 +239,20 @@ h4 {
     }
     
   }
+
+.container-nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 2px #38d2d7;
+}
   
 header .navigation {
     display: flex;
    justify-content: space-between;
     align-items: center;
 }
+
 
 .responsive img {
     padding-left: 7vw;
@@ -309,8 +315,10 @@ button {
 }
 .header-responsive-bis {
     background-color: #f2f2f2;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    padding-top: 5rem;
 }
+
 .header-responsive-bis h1 {
     font-family: "beriot-bold";
     color: #2e2f32;
@@ -382,7 +390,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-family: "beriot-bold";
-    font-size: 1rem;    
+    font-size: 1rem; 
+    position: fixed;   
+    background-color: white;
+    width: 100%;
+    border-bottom:#38d2d7 solid 2px ;
 }
 
 .desktop img {
@@ -410,14 +422,14 @@ nav {
     color: #2e2f32;
 }
 
-hr {
-    border-top : 0.1rem solid #38d2d7
-}
-
 .container-headerbis {
     display: flex;
-    justify-content: space-around;  
-}   
+    justify-content: space-around;
+}  
+
+.container-paragraphe{
+    margin-top: 4rem;
+}
 
 h1 {
     font-family: "beriot-bold";

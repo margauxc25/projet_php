@@ -14,26 +14,32 @@
     />
   </head>
   <body>
+      <!-- Ancre haut de page -->
+      <div id="haut"></div>
+
     <!-- début du header -->
     <header>
         <div class="responsive">
+            <div class="container-nav">
             <div class="navigation">
-                <img src="images/logo.svg" alt="logo du site M R M, les 2 M sont en noir et le R est en bleu">
+                <a href="#haut"> <img src="images/logo.svg" alt="logo du site M R M, les 2 M sont en noir et le R est en bleu"></a>
     
                 <!-- menu burger avec un bouton de type onclick -->
                 <button id="burger"> <span><i class="fas fa-bars"></i></span>
                 </button>
             </div>
             <ul class="menu-responsive display-none">
-                <li class="black"><a href="">La syntaxe</a></li>
-                <li class="blue"><a href="">Les variables</a></li>
-                <li class="turquoise"><a href="">Les opérateurs</a></li>
-                <li class="soft-blue"><a href="">Les constantes</a></li>
-                <li class="soft-blue"><a href="">Les conditions</a></li>
-                <li class="turquoise"><a href="">Les tableaux</a></li>
-                <li class="blue"><a href="">Les boucles</a></li>
-                <li class="black"><a href="">Les fonctions</a></li>
+                <li class="black"><a href="#syntaxe">La syntaxe</a></li>
+                <li class="blue"><a href="#variables">Les variables</a></li>
+                <li class="turquoise"><a href="#operateurs">Les opérateurs</a></li>
+                <li class="soft-blue"><a href="#constantes">Les constantes</a></li>
+                <li class="soft-blue"><a href="#conditions">Les conditions</a></li>
+                <li class="turquoise"><a href="#tableaux">Les tableaux</a></li>
+                <li class="blue"><a href="#boucles">Les boucles</a></li>
+                <li class="black"><a href="#fonctions">Les fonctions</a></li>
             </ul>
+            </div>
+
             <div class="header-responsive-bis">
                 <div>
                     <h1> PHP</h1>
@@ -50,19 +56,19 @@
         </div>
         <div class="desktop">
             <div class="navigation-desktop">
-                <img src="images/logo.svg" alt="logo du site M R M, les 2 M sont en noir et le R est en bleu">
+                <a href="#haut"><img src="images/logo.svg" alt="logo du site M R M, les 2 M sont en noir et le R est en bleu"></a>
                 <nav class="menu">
-                    <li><a href="">Syntaxe</a></li>
-                    <li><a href="">Variables</a></li>
-                    <li><a href="">Opérateurs</a></li>
-                    <li><a href="">Constantes</a></li>
-                    <li><a href="">Conditions</a></li>
-                    <li><a href="">Tableaux</a></li>
-                    <li><a href="">Boucles</a></li>
-                    <li><a href="">Fonctions</a></li>
+                    <li><a href="#syntaxe">Syntaxe</a></li>
+                    <li><a href="#variables">Variables</a></li>
+                    <li><a href="#operateurs">Opérateurs</a></li>
+                    <li><a href="#constantes">Constantes</a></li>
+                    <li><a href="#conditions">Conditions</a></li>
+                    <li><a href="#tableaux">Tableaux</a></li>
+                    <li><a href="#boucles">Boucles</a></li>
+                    <li><a href="#fonctions">Fonctions</a></li>
                 </nav>
             </div>
-            <hr>
+            
             <div class="container-headerbis">
                 <div class="container-paragraphe">
                     <h1>PHP</h1>
@@ -72,7 +78,7 @@
                         être intégré facilement
                         au HTML.</p>
                 </div>
-                <img src="images/php.png" alt="logo p h p en noir et blanc">
+              <img src="images/php.png" alt="logo p h p en noir et blanc">
             </div>
             <div class="container-cards">
                 <div class="card1">
@@ -96,9 +102,10 @@
             </div>
         </div>
     </header>
+
     <!-- SYNTAXE -->
 
-    <section class="syntaxe">
+    <section id="syntaxe" class="syntaxe">
       <article>
         <h3>La syntaxe</h3>
         <p>
@@ -129,7 +136,7 @@
 
     <!-- VARIABLE -->
 
-    <section class="variable">
+    <section id="Variables" class="variable">
       <article class="code">
         <code>
           &#60; ?php<br />
@@ -191,7 +198,7 @@
 
     <!-- OPERATEUR -->
 
-    <section class="operateur">
+    <section id="operateurs" class="operateur">
       <article>
           <h3>Les opérateurs</h3>   
         <div class="operateur-grid">
@@ -237,7 +244,7 @@
             </table>
           </div>
 
-          <div class="tableau">
+          <div class="Tableau">
             <h4>Les opérateurs logiques</h4>
             <p>
               Permettent de définir des expressions qui renvoient un booléen
@@ -420,7 +427,7 @@
 
     <!-- CONSTANTE -->
 
-    <section class="constante">
+    <section id="constantes" class="constante">
       <article>
         <h3>Les constantes</h3>
         <p>On se sert des constantes pour définir une valeur simple.</p>
@@ -506,7 +513,7 @@
     <main>
       <!-- CONDITIONS -->
 
-      <section class="conditions-section section-grid">
+      <section id="conditions" class="conditions-section section-grid">
         <article class="text">
           <h2>LES CONDITIONS</h2>
           <ul>
@@ -557,7 +564,7 @@
 
       <!-- TABLEAU -->
 
-      <section class="tableaux-section section-grid">
+      <section id="tableaux" class="tableaux-section section-grid">
         <article class="text">
           <h2>LES TABLEAUX</h2>
           <ul>
@@ -614,7 +621,7 @@
 
       <!-- BOUCLES -->
 
-      <section class="boucles-section section-grid">
+      <section id="boucles" class="boucles-section section-grid">
         <article class="text">
           <h2>LES BOUCLES</h2>
           <ul>
@@ -659,7 +666,7 @@
 
       <!-- FONCTION -->
 
-      <section class="fonctions-section section-grid">
+      <section id="fonctions" class="fonctions-section section-grid">
         <article class="text">
           <h2>LES FONCTIONS</h2>
           <ul>
