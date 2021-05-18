@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    width: 100vw;
+}
+.syntaxe{
+    display: flex;
+    justify-content: space-around;
+}
+
+.syntaxe article:nth-child(2){
+   margin-top: 5rem;
+}
+
+.variable{
+background-color: #38d2d7;
+display: flex;
+justify-content: space-around;
+}
+
+.variable article:nth-child(1){
+    margin-top: 15%;
+}
+
+.opérateur{
+    background-color: #f2f2f2 ;
+}
+
+.opérateur p {
+    padding-bottom: 0.5rem;
+}
+
+.opérateur article{
+    margin-left: 4rem;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+   
+td{
+    border: 2px solid black;
+    padding: 0.5em;
+}
+
+p{
+    font-size: 1.3rem;
+    font-family: open-sans-italic;
+}
+
+h3{
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+    font-family: 'Conv_beriot-bold-condensed';
+}
+
+h4{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem; ;
+    padding-top: 1rem;
+    font-family: 'Conv_beriot-bold-condensed';
+}
+
+section{
+    padding: 4rem 1.5rem;
+}
+
+.constante{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.exempleconstante{
+    font-family: open-sans-italic;
+    font-size: 1.3rem;
+    margin-top: 10%;
+}
+
+@font-face {
+	font-family: 'Conv_beriot-bold-condensed';
+	src: url('fonts/beriot-bold-condensed.eot');
+	src: local('☺'), url('fonts/beriot-bold-condensed.woff') format('woff'), 
+    url('fonts/beriot-bold-condensed.ttf') format('truetype'), 
+    url('fonts/beriot-bold-condensed.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: open-sans-italic;
+    src: url(fonts/open-sans-italic.ttf);
+}
+
+@media screen and (max-width: 768px){
+    .syntaxe{
+        display: flex;
+        flex-direction: column;
+    }
+    .syntaxe article{
+        margin-left: 1rem;
+    }
+    .variable{
+        display: flex;
+        flex-direction: column-reverse;
+        }
+        
+        .variable p{
+            margin-right:1rem ;
+        }
+        
+        .opérateur article{
+            margin-left: 1rem;
+        }
+        .constante{
+            display: flex;
+            flex-direction: column;
+        }
+        .constante article{
+            margin-right: 1rem;
+           
+        }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- font-awesome -->
     <link
@@ -217,6 +218,395 @@
         </article>
       </section>
     </main>
-    <script src="app.js"></script>
+
+    <section class="syntaxe">
+      <article>
+        <h3>La syntaxe</h3>
+        <p>
+          Le code PHP est délimité par la balise d’ouverture
+          <?php et de fermeture ?>.
+        </p>
+        <p>Elles permettent à PHP d’être intégré à toute forme de document.</p>
+        <p>
+          Tout ce qui se trouve en dehors de ces balises est ignoré par PHP.
+        </p>
+        <p>
+          On retrouve aussi un point-virgule ; avant la fermante afin de marquer
+          la fin de l’instruction.
+        </p>
+        <p>Il existe aussi d’autre balises PHP par exemple < ? ?>, <% %>.</p>
+      </article>
+
+      <article>
+        <p>Exemple :</p>
+        <code>
+          <p>&#60;p&#62;Paragraphe ignor&#233; par PHP&#60;/p&#62;</p>
+          <p>
+            &#60;?php echo &#8216;Ceci est prit en compte par PHP.&#8217; ;
+            ?&#62;
+          </p>
+        </code>
+      </article>
+    </section>
+
+    <section class="variable">
+      <article>
+        <p>Exemple :</p>
+        <code>
+          <p>< ?php $nom_du_visiteur = Clémentine ?></p>
+        </code>
+        <p>Le nom de la variable est : nom_du_visiteur.</p>
+        <p>Sa variable est : Clémentine.</p>
+      </article>
+
+      <article>
+        <h3>Les variables</h3>
+        <p>Une variable est une information qui existe tant que la page est</p>
+        <p>en cours de génération.</p>
+        <p>Une fois la page générée, toutes les variables sont supprimées.</p>
+        <p>Une variable est toujours constituée de deux éléments :</p>
+        <p>Un nom : Il servira à reconnaître la variable.</p>
+        <p>Une valeur : C’est l’information que la variable contient.</p>
+
+        <h4>Les différents types de variables</h4>
+        <p>
+          - Il existe différents types de variables, on parle de types de
+          données.
+        </p>
+        <br />
+        <p>
+          - Les chaines de caractères appelé <strong>string</strong> : C’est du
+          texte.
+        </p>
+        <br />
+        <p>
+          - Les nombres entiers appelé <strong>int</strong> : On compte aussi
+          les nombres relatifs
+        </p>
+        <br />
+        <p>
+          - Les nombres décimaux appelé <strong>float</strong> : Nombre a
+          virgule mais ils doivent être
+        </p>
+        <p>écrit avec un point (177.65)</p>
+        <br />
+        <p>
+          - Les booléens appelé <strong>bool</strong> : Cette variables permet
+          de stocker une information
+        </p>
+        <p>
+          soit vrai soit fausse. On écrira true si celle-ci est vrai et false
+        </p>
+        <p>si celle-ci est fausse</p>
+        <br />
+        <p>
+          - Rien aussi appelé <strong>NULL</strong> : On l’utilise quand on a
+          besoin de préciser
+        </p>
+        <p>qu’une variable est vide.</p>
+      </article>
+    </section>
+
+    <section class="opérateur">
+      <article>
+        <h3>Les opérateurs</h3>
+
+        <h4>Les opérateurs arithmériques</h4>
+        <p>Permettent de réaliser des opérations mathématiques.</p>
+        <table>
+          <tr>
+            <td>Opérateur</td>
+            <td>Opération</td>
+            <td>Exemple</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>Négation</td>
+            <td>-$a</td>
+          </tr>
+          <tr>
+            <td>+</td>
+            <td>Addition</td>
+            <td>$a + $b</td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>$a * $b</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>Soustraction</td>
+            <td>$a - $b</td>
+          </tr>
+          <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td>$a / $b</td>
+          </tr>
+          <tr>
+            <td>%</td>
+            <td>Modulo</td>
+            <td>$a % $b</td>
+          </tr>
+        </table>
+
+        <h4>Les opérateurs de comparaison</h4>
+        <p>
+          Utilisé dans les structures conditionnelles (if, elseif, for...) afin
+          de comparer des valeurs entre elles.
+        </p>
+        <table>
+          <tr>
+            <td>Opérateur</td>
+            <td>Opération</td>
+            <td>Exemple</td>
+          </tr>
+          <tr>
+            <td>==</td>
+            <td>
+              Egalité en valeur<br />
+              Vérifie que les valeurs sont identiques
+            </td>
+            <td>$a == $b</td>
+          </tr>
+          <tr>
+            <td>===</td>
+            <td>
+              Egalité en valeur et type<br />
+              Vérifie que les valeurs et les types sont identiques
+            </td>
+            <td>$a === $b</td>
+          </tr>
+          <tr>
+            <td>!=</td>
+            <td>
+              Différence en valeur<br />
+              Vérifie que les valeurs sont différentes
+            </td>
+            <td>$a != $b</td>
+          </tr>
+          <tr>
+            <td>!==</td>
+            <td>
+              Différence en valeur et en type<br />
+              Vérifie que les valeurs et types sont différents
+            </td>
+            <td>$a !== $b</td>
+          </tr>
+          <tr>
+            <td>< ></td>
+            <td>
+              Différence en valeur<br />
+              Comme !=
+            </td>
+            <td>$a < > $b</td>
+          </tr>
+          <tr>
+            <td><</td>
+            <td>Infériorité stricte</td>
+            <td>$a < $b</td>
+          </tr>
+          <tr>
+            <td><=</td>
+            <td>Infériorité ou égalité</td>
+            <td>$a <= $b</td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>Supériorité stricte</td>
+            <td>$a > $b</td>
+          </tr>
+          <tr>
+            <td>>=</td>
+            <td>Supériorité ou égalité</td>
+            <td>$a >= $b</td>
+          </tr>
+        </table>
+
+        <h4>Les opérateurs logiques</h4>
+        <p>
+          Permettent de définir des expressions qui renvoient un booléen TRUE ou
+          FALSE.
+        </p>
+        <table>
+          <tr>
+            <td>Opérateur</td>
+            <td>Opération</td>
+            <td>Exemple</td>
+          </tr>
+          <tr>
+            <td>&&</td>
+            <td>ET</td>
+            <td>$a && $b</td>
+          </tr>
+          <tr>
+            <td>AND</td>
+            <td>ET</td>
+            <td>$a AND $b</td>
+          </tr>
+          <tr>
+            <td>||</td>
+            <td>OU</td>
+            <td>$a || $b</td>
+          </tr>
+          <tr>
+            <td>OR</td>
+            <td>OU</td>
+            <td>a$ OR $b</td>
+          </tr>
+          <tr>
+            <td>XOR</td>
+            <td>OU exclusif</td>
+            <td>$a XOR $b</td>
+          </tr>
+          <tr>
+            <td>!</td>
+            <td>NON</td>
+            <td>!$a</td>
+          </tr>
+        </table>
+
+        <h4>Les opérateurs sur les tableaux</h4>
+        <p>Permettent de manipuler les tableaux</p>
+        <table>
+          <tr>
+            <td>Opérateur</td>
+            <td>Opération</td>
+            <td>Exemple</td>
+          </tr>
+
+          <tr>
+            <td>+</td>
+            <td>Union des valeurs</td>
+            <td>$a + $b</td>
+          </tr>
+
+          <tr>
+            <td>==</td>
+            <td>
+              Egalité<br />
+              TRUE si les valeurs contiennenr les mêmes paires clé/valeurs
+            </td>
+            <td>$a == $b</td>
+          </tr>
+          <tr>
+            <td>===</td>
+            <td>
+              Identique<br />
+              TRUE si $a et $b contiennent les même paires clé / valeur dans le
+              même ordre et de même type
+            </td>
+            <td>$a === $b</td>
+          </tr>
+          <tr>
+            <td>!=</td>
+            <td>
+              Inégalité<br />
+              TRUE si les valeurs ne sont pas égaux
+            </td>
+            <td>$a !=</td>
+          </tr>
+          <tr>
+            <td>< ></td>
+            <td>Inégalité</td>
+            <td>$a < > $b</td>
+          </tr>
+
+          <tr>
+            <td>!==</td>
+            <td>
+              Non identique<br />
+              TRUE si les valeurs ne sont pas identiques
+            </td>
+            <td>$a !== $b</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <section class="constante">
+      <article>
+        <h3>Les constantes</h3>
+        <p>On se sert des constantes pour définir une valeur simple.</p>
+        <p>Elles ne peuvent pas être modifiée pendant l’exécution du script.</p>
+        <p>On écrit le nom des constantes en majuscule.</p>
+        <h4>Constante prédefinie</h4>
+        <p>Il existe une multitude de constante déjà prédéfini par php.</p>
+        <p>
+          Nous vous invitons à aller faire un tour sur
+          <a
+            href="https://www.php.net/manual/fr/language.constants.predefined.php"
+            target="_blank"
+            >PHP.net</a
+          >
+          pour voir ces constantes
+        </p>
+        <h4>Constante magique</h4>
+        <p>
+          Il existe neuf constantes magiques. Leur valeur change en fonction
+        </p>
+        <p>d’où elles sont utilisées dans le script. On les reconnait par</p>
+        <p class="last">
+          leurs deux underscores au début et à la fin de celle-ci.
+        </p>
+
+        <table>
+          <tr>
+            <td>Nom</td>
+            <td>Description</td>
+          </tr>
+
+          <tr>
+            <td>__LINE__</td>
+            <td>Numéro de la ligne courante dans le fichier</td>
+          </tr>
+          <tr>
+            <td>__FILE__</td>
+            <td>Chemin complet et le nom du fichier</td>
+          </tr>
+          <tr>
+            <td>__DIR__</td>
+            <td>Nom du dossier dans lequel est le fichier</td>
+          </tr>
+          <tr>
+            <td>__FUNCTION__</td>
+            <td>Nom de la fonction (closure) pour les fonctions anonymes.</td>
+          </tr>
+          <tr>
+            <td>__CLASS__</td>
+            <td>Nom de la class definie.</td>
+          </tr>
+          <tr>
+            <td>__TRAIT__</td>
+            <td>
+              Nom du trait. Inclut l'espace de noms dans lequel il a été déclaré
+            </td>
+          </tr>
+          <tr>
+            <td>__METHOD__</td>
+            <td>Nom de la méthode utilisé.</td>
+          </tr>
+          <tr>
+            <td>__NAMESPACE</td>
+            <td>Nom de l'espace de noms courant</td>
+          </tr>
+          <tr>
+            <td>ClassName: :class</td>
+            <td>Nom entièrement qualifié de la classe.</td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="exempleconstante">
+        <p>Exemple :</p>
+        <code>
+          <p>
+            < ?php define ( ‘NOTRE_CONSTANTE’, information de la constante ) ;
+            ?>
+          </p>
+        </code>
+      </article>
+    </section>
   </body>
 </html>
