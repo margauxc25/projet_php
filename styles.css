@@ -24,20 +24,34 @@ body {
 }
 
 main {
-  padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr;
 }
 
-/* section {
+section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
+  grid-template-columns: 1fr;
+  align-items: center;
+}
 
-.text {
+.conditions-section {
   background: lightblue;
 }
 
+.text {
+  margin: 1rem;
+  padding: 1rem;
+}
+
 .code {
+  margin: 1rem;
+  padding: 1rem;
   background: lightgray;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
