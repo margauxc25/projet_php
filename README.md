@@ -14,6 +14,7 @@
 
 - HTML
 - CSS3
+- Javascript
 
 ## Collaborateurs
 - Manon Mille : https://github.com/manonmille-github
