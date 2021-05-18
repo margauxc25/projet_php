@@ -16,6 +16,6 @@
 - CSS3
 
 ## Collaborateurs
-Manon Mille (url :https://github.com/manonmille-github )
-Raphael Dorce (url:https://github.com/DorceRaphael )
-Margaux Coppi (url :https://github.com/margauxc25)
+- Manon Mille : https://github.com/manonmille-github
+- Raphael Dorce : https://github.com/DorceRaphael
+- Margaux Coppi : https://github.com/margauxc25
