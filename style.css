@@ -50,19 +50,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr;
+section {
+  padding: 4rem 1.5rem;
 }
 
-section {
+.section-grid {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   grid-auto-flow: dense;
 }
 
-section h2 {
+.section-grid h2 {
   font-family: "beriot-bold";
   margin-bottom: 2rem;
   font-size: 4rem;
@@ -82,7 +81,7 @@ section h2 {
 }
 
 .text {
-  font-family: open;
+  font-family: "open";
   font-size: 1rem;
   margin: 2rem;
   padding: 1rem;
@@ -96,7 +95,7 @@ section h2 {
 }
 
 @media screen and (min-width: 768px) {
-  section {
+  .section-grid {
     display: grid;
     grid-template-columns: 60% 40%;
   }
@@ -121,5 +120,112 @@ section h2 {
   }
   .fonctions-section .code {
     grid-column: 1;
+  }
+}
+
+/* MARGAUX */
+
+.syntaxe {
+  display: flex;
+  justify-content: space-around;
+}
+
+.syntaxe article:nth-child(2) {
+  margin-top: 5rem;
+}
+
+.variable {
+  background-color: #38d2d7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.variable article:nth-child(1) {
+  align-self: center;
+}
+
+/* OPERATEUR */
+
+.operateur {
+  background-color: #f2f2f2;
+}
+
+.operateur-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2.5rem;
+}
+
+.operateur p {
+  padding-bottom: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+td {
+  border: 2px solid black;
+  padding: 0.5em;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "open";
+}
+
+h3 {
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+  font-family: "beriot-bold";
+}
+
+h4 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  font-family: "beriot-bold";
+}
+
+.constante {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.exempleconstante {
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .syntaxe {
+    display: flex;
+    flex-direction: column;
+  }
+  .syntaxe article {
+    margin-left: 1rem;
+  }
+  .variable {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .variable p {
+    margin-right: 1rem;
+  }
+
+  .operateur-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5rem;
+  }
+
+  .constante {
+    display: flex;
+    flex-direction: column;
+  }
+  .constante article {
+    margin-right: 1rem;
   }
 }
