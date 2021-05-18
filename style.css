@@ -59,7 +59,7 @@ li a {
     color: white;    
 }
 
-
+/* couleur des carrés du menu burger */
 .black {
     background: #231f20;
 }
@@ -77,6 +77,30 @@ li a {
 }
 
 
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color : #231f20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.developpeurs {
+    color: white;
+    font-family: "beriot-bold";
+    font-size: 1rem;
+    margin-left: 2vw;
+}
 
+.developpeurs span {
+    font-family: "open";
+    font-size: 0.8rem;
+}
 
-
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 0.7rem;
+    text-align: end;
+    margin-right: 2vw;
+}
