@@ -50,6 +50,92 @@ section {
   padding: 4rem 1rem;
 }
 
+/* syntaxe */
+
+.syntaxe {
+  display: flex;
+  justify-content: space-around;
+}
+
+.syntaxe article:nth-child(2) {
+  margin-top: 5rem;
+}
+
+/* Variables */
+
+.variable {
+  background-color: #38d2d7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.variable article:nth-child(1) {
+  align-self: center;
+}
+
+/* OPERATEUR */
+
+.operateur {
+  background-color: #f2f2f2;
+}
+
+.operateur-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 2rem;
+}
+
+.operateur-tableau {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.operateur p {
+  height: 4.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+td {
+  border: 2px solid black;
+  padding: 0.5em;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "open";
+}
+
+h3 {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+  font-family: "beriot-bold";
+}
+
+h4 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  font-family: "beriot-bold";
+}
+
+.constante {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.exempleconstante {
+  align-self: center;
+}
+
+/* CONDITIONS TABLEAUX BOUCLES FONCTIONS */
+
 .section-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -92,82 +178,7 @@ section {
   border-radius: 10px;
 }
 
-/* syntaxe */
-
-.syntaxe {
-  display: flex;
-  justify-content: space-around;
-}
-
-.syntaxe article:nth-child(2) {
-  margin-top: 5rem;
-}
-
-/* Variables */
-.variable {
-  background-color: #38d2d7;
-  display: flex;
-  justify-content: space-around;
-}
-
-.variable article:nth-child(1) {
-  align-self: center;
-}
-
-/* OPERATEUR */
-
-.operateur {
-  background-color: #f2f2f2;
-}
-
-.operateur-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  row-gap: 2rem;
-}
-
-.operateur p {
-  padding-bottom: 0.5rem;
-}
-
-table {
-  border-collapse: collapse;
-  margin-top: 1.5rem;
-}
-
-td {
-  border: 2px solid black;
-  padding: 0.5em;
-}
-
-p {
-  font-size: 1rem;
-  font-family: "open";
-}
-
-h3 {
-  font-size: 3rem;
-  padding-bottom: 1.5rem;
-  font-family: "beriot-bold";
-}
-
-h4 {
-  font-size: 1.5rem;
-  padding-bottom: 0.5rem;
-  padding-top: 1rem;
-  font-family: "beriot-bold";
-}
-
-.constante {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-}
-
-.exempleconstante {
-  align-self: center;
-}
+/* HEADER */
 
 .container-nav {
   position: fixed;
@@ -340,6 +351,7 @@ footer {
   .operateur-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: left;
     row-gap: 2rem;
     column-gap: 2rem;
   }
