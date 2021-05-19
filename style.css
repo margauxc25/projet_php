@@ -54,10 +54,11 @@ section {
 
 .syntaxe {
   display: flex;
+  justify-content: space-between;
 }
 
 .syntaxe article:nth-child(2) {
-  margin-top: 5rem;
+  align-self: center;
 }
 
 /* Variables */
@@ -65,7 +66,11 @@ section {
 .variable {
   background-color: #38d2d7;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.variable .text {
+  width: 58%;
 }
 
 .variable article:nth-child(1) {
@@ -125,7 +130,12 @@ h4 {
 
 .constante {
   display: flex;
+  justify-content: space-between;
   flex-direction: row-reverse;
+}
+
+.constante .text {
+  width: 58%;
 }
 
 .exempleconstante {
@@ -139,6 +149,7 @@ h4 {
   grid-template-columns: 1fr;
   align-items: center;
   grid-auto-flow: dense;
+  row-gap: 2rem;
 }
 
 .section-grid h2 {
@@ -170,7 +181,7 @@ h4 {
 
 .code {
   background: lightgray;
-  margin: 1rem;
+  margin: 2rem 0;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -307,7 +318,7 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .syntaxe {
     display: flex;
     flex-direction: column;
@@ -320,6 +331,10 @@ footer {
     flex-direction: column-reverse;
   }
 
+  .variable .text {
+    width: 100%;
+  }
+
   .variable p {
     margin-right: 1rem;
   }
@@ -328,18 +343,23 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .constante .text {
+    width: 100%;
+  }
+
   .constante article {
     margin-right: 1rem;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   section {
     padding: 4rem 5rem;
   }
   .section-grid {
     display: grid;
     grid-template-columns: 60% 40%;
+    grid-gap: 2rem;
   }
 
   .operateur-grid {
@@ -375,7 +395,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .responsive {
     display: none;
   }
