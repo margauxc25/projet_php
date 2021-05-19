@@ -323,9 +323,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .syntaxe article {
-    margin-left: 1rem;
-  }
+
   .variable {
     display: flex;
     flex-direction: column-reverse;
