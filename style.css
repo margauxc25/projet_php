@@ -54,7 +54,6 @@ section {
 
 .syntaxe {
   display: flex;
-  justify-content: space-around;
 }
 
 .syntaxe article:nth-child(2) {
@@ -127,7 +126,6 @@ h4 {
 .constante {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
 }
 
 .exempleconstante {
@@ -168,7 +166,6 @@ h4 {
 .text {
   font-family: "open";
   font-size: 1rem;
-  padding: 1rem;
 }
 
 .code {
@@ -193,9 +190,6 @@ header .navigation {
   align-items: center;
 }
 
-.responsive img {
-  padding-left: 7vw;
-}
 button {
   width: 7vw;
   height: 3rem;
@@ -341,7 +335,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   section {
-    padding: 4rem 1.5rem;
+    padding: 4rem 5rem;
   }
   .section-grid {
     display: grid;
@@ -402,8 +396,8 @@ footer {
     border-bottom: #38d2d7 solid 2px;
   }
 
-  .desktop img {
-    margin-left: 2vw;
+  .container-image img {
+    width: 20rem;
   }
   .menu {
     display: flex;
@@ -436,6 +430,12 @@ footer {
     margin-top: 4rem;
   }
 
+  .container-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   h1 {
     font-family: "beriot-bold";
     font-size: 7rem;
@@ -448,7 +448,7 @@ footer {
     font-family: "open";
     margin-top: 9vh;
     margin-bottom: 9vh;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
   .container-cards {
@@ -488,7 +488,7 @@ footer {
     font-family: "open";
     padding-left: 1.8rem;
     padding-right: 1.8rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
   }
 
