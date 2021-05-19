@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <!-- font-awesome -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
@@ -123,7 +123,7 @@
 
     <!-- SYNTAXE -->
 
-    <section id="syntaxe" class="syntaxe">
+    <section id="syntaxe" class="syntaxe-section section-grid">
       <article class="text">
         <h3>La syntaxe</h3>
         <p>
@@ -153,8 +153,7 @@
     </section>
 
     <!-- VARIABLE -->
-
-    <section id="variables" class="variable">
+    <section id="variables" class="variables-section section-grid">
       <article class="code">
         <code>
           &#60; ?php<br />
@@ -167,8 +166,10 @@
 
       <article class="text">
         <h3>Les variables</h3>
-        <p>Une variable est une information qui existe tant que la page est</p>
-        <p>en cours de génération.</p>
+        <p>
+          Une variable est une information qui existe tant que la page est en
+          cours de génération.
+        </p>
         <p>Une fois la page générée, toutes les variables sont supprimées.</p>
         <p>Une variable est toujours constituée de deux éléments :</p>
         <p>Un nom : Il servira à reconnaître la variable.</p>
@@ -193,30 +194,28 @@
         <br />
         <p>
           - Les nombres décimaux appelé <strong>float</strong> : Nombre a
-          virgule mais ils doivent être
+          virgule mais ils doivent être écrit avec un point (177.65)
         </p>
-        <p>écrit avec un point (177.65)</p>
         <br />
         <p>
           - Les booléens appelé <strong>bool</strong> : Cette variables permet
           de stocker une information
         </p>
         <p>
-          soit vrai soit fausse. On écrira true si celle-ci est vrai et false
+          soit vrai soit fausse. On écrira true si celle-ci est vrai et false si
+          celle-ci est fausse
         </p>
-        <p>si celle-ci est fausse</p>
         <br />
         <p>
           - Rien aussi appelé <strong>NULL</strong> : On l’utilise quand on a
-          besoin de préciser
+          besoin de préciser qu’une variable est vide.
         </p>
-        <p>qu’une variable est vide.</p>
       </article>
     </section>
 
     <!-- OPERATEUR -->
 
-    <section id="operateurs" class="operateur">
+    <section id="operateurs" class="operateur-section">
       <article class="text">
         <h3>Les opérateurs</h3>
         <div class="operateur-grid">
@@ -445,7 +444,7 @@
 
     <!-- CONSTANTE -->
 
-    <section id="constantes" class="constante">
+    <section id="constantes" class="constantes-section section-grid">
       <article class="text">
         <h3>Les constantes</h3>
         <p>On se sert des constantes pour définir une valeur simple.</p>
@@ -465,10 +464,8 @@
         <h4>Constante magique</h4>
         <p>
           Il existe neuf constantes magiques. Leur valeur change en fonction
-        </p>
-        <p>d’où elles sont utilisées dans le script. On les reconnait par</p>
-        <p class="last">
-          leurs deux underscores au début et à la fin de celle-ci.
+          d’où elles sont utilisées dans le script. On les reconnait par leurs
+          deux underscores au début et à la fin de celle-ci.
         </p>
 
         <table>
@@ -728,11 +725,18 @@
     <footer>
       <p class="developpeurs">
         Développeurs
-        <span><a href="https://github.com/margauxc25">Margaux Coppi -</a> </span
+        <span
+          ><a href="https://github.com/margauxc25" target="_blank"
+            >Margaux Coppi -</a
+          > </span
         ><span>
-          <a href="https://github.com/DorceRaphael">Raphaël Dorce - </a></span
+          <a href="https://github.com/DorceRaphael" target="_blank"
+            >Raphaël Dorce -
+          </a></span
         ><span
-          ><a href="https://github.com/manonmille-github"> Manon Mille</a></span
+          ><a href="https://github.com/manonmille-github" target="_blank">
+            Manon Mille</a
+          ></span
         >
       </p>
       <p class="copyright">&copy 2021 MRM - All Rights Reserved</p>
