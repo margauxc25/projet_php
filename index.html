@@ -1,82 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Php</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-    <!-- Ancre haut de page -->
-    <div id="haut"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Php</title>
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- début du header -->
-    <header>
-      <div class="responsive">
-        <div class="container-nav">
-          <div class="navigation">
-            <a href="#haut">
-              <img
-                src="images/logo.svg"
-                alt="logo du site M R M, les 2 M sont en noir et le R est en bleu"
-            /></a>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+</head>
 
-            <!-- menu burger avec un bouton de type onclick -->
-            <button id="burger">
-              <span><i class="fas fa-bars"></i></span>
-            </button>
-          </div>
+<body>
+  <!-- Ancre haut de page -->
+  <div id="haut"></div>
 
-          <!-- class ancre pour le JS -->
-          <ul class="menu-responsive display-none">
-            <li class="black ancre"><a href="#syntaxe">La syntaxe</a></li>
-            <li class="blue ancre"><a href="#variables">Les variables</a></li>
-            <li class="turquoise ancre">
-              <a href="#operateurs">Les opérateurs</a>
-            </li>
-            <li class="soft-blue ancre">
-              <a href="#constantes">Les constantes</a>
-            </li>
-            <li class="soft-blue ancre">
-              <a href="#conditions">Les conditions</a>
-            </li>
-            <li class="turquoise ancre">
-              <a href="#tableaux">Les tableaux</a>
-            </li>
-            <li class="blue ancre"><a href="#boucles">Les boucles</a></li>
-            <li class="black ancre"><a href="#fonctions">Les fonctions</a></li>
-          </ul>
+  <!-- début du header -->
+  <header>
+    <div class="responsive">
+      <div class="container-nav">
+        <div class="navigation">
+          <a href="#haut">
+            <img src="images/logo.svg" alt="logo du site M R M, les 2 M sont en noir et le R est en bleu" /></a>
+
+          <!-- menu burger avec un bouton de type onclick -->
+          <button id="burger">
+            <span><i class="fas fa-bars"></i></span>
+          </button>
         </div>
-
-        <div class="header-responsive-bis">
-          <div>
-            <h1>PHP</h1>
-            <img src="images/php.png" alt="logo php en noir" />
-          </div>
-          <p>
-            PHP (officiellement, ce sigle est un acronyme récursif pour PHP
-            Hypertext Preprocessor ) est un langage de scripts généraliste et
-            Open Source, spécialement conçu pour le développement d'applications
-            web. Il peut être intégré facilement au HTML
-          </p>
-        </div>
+        <ul class="menu-responsive display-none ancre">
+          <li class="black"><a href="#syntaxe">La syntaxe</a></li>
+          <li class="blue"><a href="#variables">Les variables</a></li>
+          <li class="turquoise"><a href="#operateurs">Les opérateurs</a></li>
+          <li class="soft-blue"><a href="#constantes">Les constantes</a></li>
+          <li class="soft-blue"><a href="#conditions">Les conditions</a></li>
+          <li class="turquoise"><a href="#tableaux">Les tableaux</a></li>
+          <li class="blue"><a href="#boucles">Les boucles</a></li>
+          <li class="black"><a href="#fonctions">Les fonctions</a></li>
+        </ul>
       </div>
-      <div class="desktop">
-        <div class="navigation-desktop">
-          <a href="#haut"
-            ><img
-              src="images/logo.svg"
-              alt="logo du site M R M, les 2 M sont en noir et le R est en bleu"
-          /></a>
-          <nav class="menu">
+
+      <div class="header-responsive-bis">
+        <div>
+          <h1>PHP</h1>
+          <img src="images/php.png" alt="logo php en noir" />
+        </div>
+        <p>
+          PHP (officiellement, ce sigle est un acronyme récursif pour PHP
+          Hypertext Preprocessor ) est un langage de scripts généraliste et
+          Open Source, spécialement conçu pour le développement d'applications
+          web. Il peut être intégré facilement au HTML
+        </p>
+      </div>
+    </div>
+    <div class="desktop">
+      <div class="navigation-desktop">
+        <a href="#haut"><img src="images/logo.svg"
+            alt="logo du site M R M, les 2 M sont en noir et le R est en bleu" /></a>
+        <nav class="menu">
+          <ul>
             <li><a href="#syntaxe">Syntaxe</a></li>
             <li><a href="#variables">Variables</a></li>
             <li><a href="#operateurs">Opérateurs</a></li>
@@ -85,53 +67,54 @@
             <li><a href="#tableaux">Tableaux</a></li>
             <li><a href="#boucles">Boucles</a></li>
             <li><a href="#fonctions">Fonctions</a></li>
-          </nav>
-        </div>
+          </ul>
+        </nav>
+      </div>
 
-        <div class="container-headerbis">
-          <div class="container-paragraphe">
-            <h1>PHP</h1>
-            <p class="main-paragraphe">
-              PHP (officiellement, ce sigle est un acronyme récursif pour PHP
-              Hypertext Preprocessor ) est un langage de scripts généraliste et
-              Open Source, spécialement conçu pour le développement
-              d'applications web. Il peut être intégré facilement au HTML.
-            </p>
-          </div>
-          <div class="container-image">
-            <img src="images/php.png" alt="logo p h p en noir et blanc" />
-          </div>
+      <div class="container-headerbis">
+        <div class="container-paragraphe">
+          <h1>PHP</h1>
+          <p class="main-paragraphe">
+            PHP (officiellement, ce sigle est un acronyme récursif pour PHP
+            Hypertext Preprocessor ) est un langage de scripts généraliste et
+            Open Source, spécialement conçu pour le développement
+            d'applications web. Il peut être intégré facilement au HTML.
+          </p>
         </div>
-        <div class="container-cards">
-          <div class="card1">
-            <p class="card-paragraphe">
-              PHP peut être utilisé sur pratiquement n'importe quel système
-              d'exploitation et n'importe quel type de serveur.
-            </p>
-          </div>
-          <div class="card2">
-            <p class="card-paragraphe">
-              Les applications peuvent être programmées pour s’axer sur les
-              procédures ou sur le projet.
-            </p>
-          </div>
-          <div class="card3">
-            <p class="card-paragraphe">
-              Les fichiers HTML, les images, les fichiers PDF ou les fichiers
-              Flash peuvent être générés dynamiquement avec PHP.
-            </p>
-          </div>
-          <div class="card4">
-            <p class="card-paragraphe">
-              PHP prend en charge une grande quantité de bases de données
-              différentes.
-            </p>
-          </div>
+        <div class="container-image">
+          <img src="images/php.png" alt="logo p h p en noir et blanc" />
         </div>
       </div>
-    </header>
+      <div class="container-cards">
+        <div class="card1">
+          <p class="card-paragraphe">
+            PHP peut être utilisé sur pratiquement n'importe quel système
+            d'exploitation et n'importe quel type de serveur.
+          </p>
+        </div>
+        <div class="card2">
+          <p class="card-paragraphe">
+            Les applications peuvent être programmées pour s’axer sur les
+            procédures ou sur le projet.
+          </p>
+        </div>
+        <div class="card3">
+          <p class="card-paragraphe">
+            Les fichiers HTML, les images, les fichiers PDF ou les fichiers
+            Flash peuvent être générés dynamiquement avec PHP.
+          </p>
+        </div>
+        <div class="card4">
+          <p class="card-paragraphe">
+            PHP prend en charge une grande quantité de bases de données
+            différentes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <!-- SYNTAXE -->
+  <!-- SYNTAXE -->
 
     <section id="syntaxe" class="syntaxe-section section-grid">
       <article class="text">
@@ -153,16 +136,16 @@
         </p>
       </article>
 
-      <article class="code">
-        <code>
+    <article class="code">
+      <code>
           &#60;p&#62;Paragraphe ignor&#233; par PHP&#60;/p&#62;<br />
 
           &#60;?php<br />
           echo &#8216;Ceci est prit en compte par PHP.&#8217; ;<br />
           ?&#62;<br />
         </code>
-      </article>
-    </section>
+    </article>
+  </section>
 
     <!-- VARIABLE -->
     <section id="variables" class="variables-section section-grid">
@@ -480,95 +463,306 @@
           deux underscores au début et à la fin de celle-ci.
         </p>
 
-        <table>
-          <tr>
-            <td>Nom</td>
-            <td>Description</td>
-          </tr>
+        <div class="operateur-tableau">
+          <h4>Les opérateurs logiques</h4>
+          <p>
+            Permettent de définir des expressions qui renvoient un booléen
+            TRUE ou FALSE.
+          </p>
+          <table>
+            <tr>
+              <td>Opérateur</td>
+              <td>Opération</td>
+              <td>Exemple</td>
+            </tr>
+            <tr>
+              <td>&&</td>
+              <td>ET</td>
+              <td>$a && $b</td>
+            </tr>
+            <tr>
+              <td>AND</td>
+              <td>ET</td>
+              <td>$a AND $b</td>
+            </tr>
+            <tr>
+              <td>||</td>
+              <td>OU</td>
+              <td>$a || $b</td>
+            </tr>
+            <tr>
+              <td>OR</td>
+              <td>OU</td>
+              <td>a$ OR $b</td>
+            </tr>
+            <tr>
+              <td>XOR</td>
+              <td>OU exclusif</td>
+              <td>$a XOR $b</td>
+            </tr>
+            <tr>
+              <td>!</td>
+              <td>NON</td>
+              <td>!$a</td>
+            </tr>
+          </table>
+        </div>
 
-          <tr>
-            <td>__LINE__</td>
-            <td>Numéro de la ligne courante dans le fichier</td>
-          </tr>
-          <tr>
-            <td>__FILE__</td>
-            <td>Chemin complet et le nom du fichier</td>
-          </tr>
-          <tr>
-            <td>__DIR__</td>
-            <td>Nom du dossier dans lequel est le fichier</td>
-          </tr>
-          <tr>
-            <td>__FUNCTION__</td>
-            <td>Nom de la fonction (closure) pour les fonctions anonymes.</td>
-          </tr>
-          <tr>
-            <td>__CLASS__</td>
-            <td>Nom de la class definie.</td>
-          </tr>
-          <tr>
-            <td>__TRAIT__</td>
-            <td>
-              Nom du trait. Inclut l'espace de noms dans lequel il a été déclaré
-            </td>
-          </tr>
-          <tr>
-            <td>__METHOD__</td>
-            <td>Nom de la méthode utilisé.</td>
-          </tr>
-          <tr>
-            <td>__NAMESPACE</td>
-            <td>Nom de l'espace de noms courant</td>
-          </tr>
-          <tr>
-            <td>ClassName: :class</td>
-            <td>Nom entièrement qualifié de la classe.</td>
-          </tr>
-        </table>
-      </article>
+        <div class="operateur-tableau">
+          <h4>Les opérateurs de comparaison</h4>
+          <p>
+            Utilisé dans les structures conditionnelles (if, elseif, for...)
+            afin de comparer des valeurs entre elles.
+          </p>
+          <table>
+            <tr>
+              <td>Opérateur</td>
+              <td>Opération</td>
+              <td>Exemple</td>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>
+                Egalité en valeur<br />
+                Vérifie que les valeurs sont identiques
+              </td>
+              <td>$a == $b</td>
+            </tr>
+            <tr>
+              <td>===</td>
+              <td>
+                Egalité en valeur et type<br />
+                Vérifie que les valeurs et les types sont identiques
+              </td>
+              <td>$a === $b</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>
+                Différence en valeur<br />
+                Vérifie que les valeurs sont différentes
+              </td>
+              <td>$a != $b</td>
+            </tr>
+            <tr>
+              <td>!==</td>
+              <td>
+                Différence en valeur et en type<br />
+                Vérifie que les valeurs et types sont différents
+              </td>
+              <td>$a !== $b</td>
+            </tr>
+            <tr>
+              <td>
+                <>
+              </td>
+              <td>
+                Différence en valeur<br />
+                Comme !=
+              </td>
+              <td>$a <> $b</td>
+            </tr>
+            <tr>
+              <td>
+                << /td>
+              <td>Infériorité stricte</td>
+              <td>$a < $b</td>
+            </tr>
+            <tr>
+              <td>
+                <=< /td>
+              <td>Infériorité ou égalité</td>
+              <td>$a <= $b</td>
+            </tr>
+            <tr>
+              <td>></td>
+              <td>Supériorité stricte</td>
+              <td>$a > $b</td>
+            </tr>
+            <tr>
+              <td>>=</td>
+              <td>Supériorité ou égalité</td>
+              <td>$a >= $b</td>
+            </tr>
+          </table>
+        </div>
 
-      <article class="exempleconstante code">
-        <code>
+        <div class="operateur-tableau">
+          <h4>Les opérateurs sur les tableaux</h4>
+          <p>Permettent de manipuler les tableaux</p>
+          <table>
+            <tr>
+              <td>Opérateur</td>
+              <td>Opération</td>
+              <td>Exemple</td>
+            </tr>
+
+            <tr>
+              <td>+</td>
+              <td>Union des valeurs</td>
+              <td>$a + $b</td>
+            </tr>
+
+            <tr>
+              <td>==</td>
+              <td>
+                Egalité<br />
+                TRUE si les valeurs contiennenr les mêmes paires clé/valeurs
+              </td>
+              <td>$a == $b</td>
+            </tr>
+            <tr>
+              <td>===</td>
+              <td>
+                Identique<br />
+                TRUE si $a et $b contiennent les même paires clé / valeur dans
+                le même ordre et de même type
+              </td>
+              <td>$a === $b</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>
+                Inégalité<br />
+                TRUE si les valeurs ne sont pas égaux
+              </td>
+              <td>$a !=</td>
+            </tr>
+            <tr>
+              <td>
+                <>
+              </td>
+              <td>Inégalité</td>
+              <td>$a <> $b</td>
+            </tr>
+
+            <tr>
+              <td>!==</td>
+              <td>
+                Non identique<br />
+                TRUE si les valeurs ne sont pas identiques
+              </td>
+              <td>$a !== $b</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- CONSTANTE -->
+
+  <section id="constantes" class="constante">
+    <article>
+      <h3>Les constantes</h3>
+      <p>On se sert des constantes pour définir une valeur simple.</p>
+      <p>Elles ne peuvent pas être modifiée pendant l’exécution du script.</p>
+      <p>On écrit le nom des constantes en majuscule.</p>
+      <h4>Constante prédefinie</h4>
+      <p>Il existe une multitude de constante déjà prédéfini par php.</p>
+      <p>
+        Nous vous invitons à aller faire un tour sur
+        <a href="https://www.php.net/manual/fr/language.constants.predefined.php" target="_blank">PHP.net</a>
+        pour voir ces constantes
+      </p>
+      <h4>Constante magique</h4>
+      <p>
+        Il existe neuf constantes magiques. Leur valeur change en fonction
+      </p>
+      <p>d’où elles sont utilisées dans le script. On les reconnait par</p>
+      <p class="last">
+        leurs deux underscores au début et à la fin de celle-ci.
+      </p>
+
+      <table>
+        <tr>
+          <td>Nom</td>
+          <td>Description</td>
+        </tr>
+
+        <tr>
+          <td>__LINE__</td>
+          <td>Numéro de la ligne courante dans le fichier</td>
+        </tr>
+        <tr>
+          <td>__FILE__</td>
+          <td>Chemin complet et le nom du fichier</td>
+        </tr>
+        <tr>
+          <td>__DIR__</td>
+          <td>Nom du dossier dans lequel est le fichier</td>
+        </tr>
+        <tr>
+          <td>__FUNCTION__</td>
+          <td>Nom de la fonction (closure) pour les fonctions anonymes.</td>
+        </tr>
+        <tr>
+          <td>__CLASS__</td>
+          <td>Nom de la class definie.</td>
+        </tr>
+        <tr>
+          <td>__TRAIT__</td>
+          <td>
+            Nom du trait. Inclut l'espace de noms dans lequel il a été déclaré
+          </td>
+        </tr>
+        <tr>
+          <td>__METHOD__</td>
+          <td>Nom de la méthode utilisé.</td>
+        </tr>
+        <tr>
+          <td>__NAMESPACE</td>
+          <td>Nom de l'espace de noms courant</td>
+        </tr>
+        <tr>
+          <td>ClassName: :class</td>
+          <td>Nom entièrement qualifié de la classe.</td>
+        </tr>
+      </table>
+    </article>
+
+    <article class="exempleconstante code">
+      <code>
           &#60; ?php<br />
           define ( &#8216;NOTRE_CONSTANTE&#8217;, information de la constante )
           ;<br />
           ?&#62;<br />
         </code>
-      </article>
-    </section>
+    </article>
+  </section>
 
-    <!-- CONDITIONS -->
+  <!-- CONDITIONS -->
 
-    <section id="conditions" class="conditions-section section-grid">
-      <article class="text">
-        <h2>Les conditions</h2>
-        <ul>
-          <li>
-            Les conditions permettent à PHP de prendre des décisions en fonction
-            de la valeur des variables.
-          </li>
-          <li>
-            La forme de condition la plus courante est if ... elseif ... else
-            qui signifie « si »… « sinon si »… « sinon ».
-          </li>
-          <li>
-            On peut combiner des conditions avec les mots-clés AND (« et ») et
-            OR (« ou »).
-          </li>
-          <li>
-            Si une condition comporte de nombreux elseif , il peut être plus
-            pratique d'utiliser switch , une autre forme de condition.
-          </li>
-          <li>
-            Les ternaires sont des conditions condensées qui font un test sur
-            une variable, et en fonction des résultats de ce test donnent une
-            valeur à une autre variable. Elles sont cependant plus rarement
-            utilisées.
-          </li>
-        </ul>
-      </article>
-      <article class="code">
-        <code>
+  <section id="conditions" class="conditions-section section-grid">
+    <article class="text">
+      <h2>Les conditions</h2>
+      <ul>
+        <li>
+          Les conditions permettent à PHP de prendre des décisions en fonction
+          de la valeur des variables.
+        </li>
+        <li>
+          La forme de condition la plus courante est if ... elseif ... else
+          qui signifie « si »… « sinon si »… « sinon ».
+        </li>
+        <li>
+          On peut combiner des conditions avec les mots-clés AND (« et ») et
+          OR (« ou »).
+        </li>
+        <li>
+          Si une condition comporte de nombreux elseif , il peut être plus
+          pratique d'utiliser switch , une autre forme de condition.
+        </li>
+        <li>
+          Les ternaires sont des conditions condensées qui font un test sur
+          une variable, et en fonction des résultats de ce test donnent une
+          valeur à une autre variable. Elles sont cependant plus rarement
+          utilisées.
+        </li>
+      </ul>
+    </article>
+    <article class="code">
+      <code>
           &#60;?php $age = 8;<br />
           if ($age &#60;= 12) // SI l'&#226;ge est inférieur ou égal à 12<br />
           {<br />
@@ -687,37 +881,37 @@
           }<br />
           ?&#62;<br />
         </code>
-      </article>
-    </section>
+    </article>
+  </section>
 
-    <!-- FONCTION -->
+  <!-- FONCTION -->
 
-    <section id="fonctions" class="fonctions-section section-grid">
-      <article class="text">
-        <h2>Les fonctions</h2>
-        <ul>
-          <li>
-            Les fonctions sont des blocs de code qui exécutent des instructions
-            en fonction de certains paramètres.
-          </li>
-          <li>
-            Les fonctions ont généralement une entrée et une sortie. Par
-            exemple, si on donne la valeur 4 à la fonction de calcul du cube,
-            celle-ci renvoie 64 en sortie.
-          </li>
-          <li>
-            PHP propose des centaines et des centaines de fonctions prêtes à
-            l'emploi pour tous types de tâches : envoyer un e-mail, récupérer
-            l'heure, crypter des mots de passe, etc.
-          </li>
-          <li>
-            Si PHP ne propose pas la fonction dont on a besoin, il est possible
-            de la créer avec le mot-clé function .
-          </li>
-        </ul>
-      </article>
-      <article class="code">
-        <code>
+  <section id="fonctions" class="fonctions-section section-grid">
+    <article class="text">
+      <h2>Les fonctions</h2>
+      <ul>
+        <li>
+          Les fonctions sont des blocs de code qui exécutent des instructions
+          en fonction de certains paramètres.
+        </li>
+        <li>
+          Les fonctions ont généralement une entrée et une sortie. Par
+          exemple, si on donne la valeur 4 à la fonction de calcul du cube,
+          celle-ci renvoie 64 en sortie.
+        </li>
+        <li>
+          PHP propose des centaines et des centaines de fonctions prêtes à
+          l'emploi pour tous types de tâches : envoyer un e-mail, récupérer
+          l'heure, crypter des mots de passe, etc.
+        </li>
+        <li>
+          Si PHP ne propose pas la fonction dont on a besoin, il est possible
+          de la créer avec le mot-clé function .
+        </li>
+      </ul>
+    </article>
+    <article class="code">
+      <code>
           &#60;?php // Ci-dessous, la fonction qui calcule le volume du cône<br />
           function VolumeCone($rayon, $hauteur)<br />
           {<br />
@@ -730,29 +924,21 @@
           $volume;<br />
           ?&#62;<br />
         </code>
-      </article>
-    </section>
+    </article>
+  </section>
 
-    <!-- début du footer -->
-    <footer>
-      <p class="developpeurs">
-        Développeurs
-        <span
-          ><a href="https://github.com/margauxc25" target="_blank"
-            >Margaux Coppi -</a
-          > </span
-        ><span>
-          <a href="https://github.com/DorceRaphael" target="_blank"
-            >Raphaël Dorce -
-          </a></span
-        ><span
-          ><a href="https://github.com/manonmille-github" target="_blank">
-            Manon Mille</a
-          ></span
-        >
-      </p>
-      <p class="copyright">&copy; 2021 MRM - All Rights Reserved</p>
-    </footer>
-    <script src="/javascript/script.js"></script>
-  </body>
+  <!-- début du footer -->
+  <footer>
+    <p class="developpeurs">
+      Développeurs
+      <a href="https://github.com/margauxc25">Margaux Coppi -</a>
+      <a href="https://github.com/DorceRaphael">Raphaël Dorce - </a>
+      <a href="https://github.com/manonmille-github"> Manon Mille - </a>
+      <a href="https://github.com/BryanCoder100">Bryan Pergaud</a>
+    </p>
+    <p class="copyright">&copy; 2021 MRM - All Rights Reserved</p>
+  </footer>
+  <script src="javascript/script.js"></script>
+</body>
+
 </html>

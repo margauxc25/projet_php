@@ -205,6 +205,8 @@ footer {
 .developpeurs a {
   text-decoration: none;
   color: white;
+  font-family: "open";
+  font-size: 0.8rem;
 }
 
 .copyright {
@@ -379,9 +381,10 @@ footer {
   .container-image img {
     width: 20rem;
   }
-
-  .menu {
-    display: flex;
+.menu ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
   }
 
   nav {
@@ -476,13 +479,11 @@ footer {
   .developpeurs {
     font-size: 3rem;
   }
-
-  .developpeurs span {
+  .developpeurs a {
     font-size: 1.5rem;
   }
 }
-
-.developpeurs span :hover {
+.developpeurs a :hover {
   font-size: 2rem;
   color: #13b8be;
 }
