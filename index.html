@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Php</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -34,15 +34,25 @@
               <span><i class="fas fa-bars"></i></span>
             </button>
           </div>
+
+          <!-- class ancre pour le JS -->
           <ul class="menu-responsive display-none">
-            <li class="black"><a href="#syntaxe">La syntaxe</a></li>
-            <li class="blue"><a href="#variables">Les variables</a></li>
-            <li class="turquoise"><a href="#operateurs">Les opérateurs</a></li>
-            <li class="soft-blue"><a href="#constantes">Les constantes</a></li>
-            <li class="soft-blue"><a href="#conditions">Les conditions</a></li>
-            <li class="turquoise"><a href="#tableaux">Les tableaux</a></li>
-            <li class="blue"><a href="#boucles">Les boucles</a></li>
-            <li class="black"><a href="#fonctions">Les fonctions</a></li>
+            <li class="black ancre"><a href="#syntaxe">La syntaxe</a></li>
+            <li class="blue ancre"><a href="#variables">Les variables</a></li>
+            <li class="turquoise ancre">
+              <a href="#operateurs">Les opérateurs</a>
+            </li>
+            <li class="soft-blue ancre">
+              <a href="#constantes">Les constantes</a>
+            </li>
+            <li class="soft-blue ancre">
+              <a href="#conditions">Les conditions</a>
+            </li>
+            <li class="turquoise ancre">
+              <a href="#tableaux">Les tableaux</a>
+            </li>
+            <li class="blue ancre"><a href="#boucles">Les boucles</a></li>
+            <li class="black ancre"><a href="#fonctions">Les fonctions</a></li>
           </ul>
         </div>
 
@@ -138,7 +148,9 @@
           On retrouve aussi un point-virgule ; avant la balise fermante afin de
           marquer la fin de l’instruction.
         </p>
-        <p>Il existe aussi d’autre balises PHP par exemple &#60; ? ?>, &#60;% %>.</p>
+        <p>
+          Il existe aussi d’autre balises PHP par exemple &#60; ? ?>, &#60;% %>.
+        </p>
       </article>
 
       <article class="code">
@@ -741,6 +753,6 @@
       </p>
       <p class="copyright">&copy 2021 MRM - All Rights Reserved</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="/javascript/script.js"></script>
   </body>
 </html>

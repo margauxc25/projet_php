@@ -8,23 +8,25 @@
 
 @font-face {
   font-family: "beriot-bold";
-  src: url(fonts/beriot-bold-condensed.ttf);
+  src: url(/fonts/beriot-bold-condensed.ttf);
 }
 
 @font-face {
   font-family: "beriot";
-  src: url(fonts/Beriot-Light.ttf);
+  src: url(/fonts/Beriot-Light.ttf);
 }
 
 @font-face {
   font-family: "noyh";
-  src: url(fonts/noyh-slim-bold.otf);
+  src: url(/fonts/noyh-slim-bold.otf);
 }
 
 @font-face {
   font-family: "open";
-  src: url(fonts/open-sans-italic.ttf);
+  src: url(/fonts/Beriot-Light.ttf);
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 ul {
   list-style-type: none;
@@ -60,7 +62,7 @@ td {
 
 p {
   font-size: 1rem;
-  font-family: "open";
+  font-family: "Nunito", sans-serif;
 }
 
 h3 {
@@ -170,7 +172,7 @@ button {
 }
 
 .header-responsive-bis p {
-  font-family: "open";
+  font-family: "Nunito", sans-serif;
   font-size: 1.4rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -196,7 +198,7 @@ footer {
 }
 
 .developpeurs span {
-  font-family: "open";
+  font-family: "Nunito", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -272,7 +274,7 @@ footer {
 }
 
 .text {
-  font-family: "open";
+  font-family: "Nunito", sans-serif;
   font-size: 1rem;
 }
 
@@ -424,7 +426,7 @@ footer {
 
   .main-paragraphe {
     width: 40vw;
-    font-family: "open";
+    font-family: "Nunito", sans-serif;
     margin-top: 9vh;
     margin-bottom: 9vh;
     font-size: 1.35rem;
@@ -464,7 +466,7 @@ footer {
 
   .card-paragraphe {
     color: white;
-    font-family: "open";
+    font-family: "Nunito", sans-serif;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
     font-size: 1rem;
@@ -487,4 +489,15 @@ footer {
 
 .copyright {
   font-size: 1rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
