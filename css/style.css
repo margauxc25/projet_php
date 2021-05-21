@@ -4,25 +4,29 @@
   box-sizing: border-box;
 }
 
+/* BASE */
+
 @font-face {
   font-family: "beriot-bold";
-  src: url(fonts/beriot-bold-condensed.ttf);
+  src: url(/fonts/beriot-bold-condensed.ttf);
 }
 
 @font-face {
   font-family: "beriot";
-  src: url(fonts/Beriot-Light.ttf);
+  src: url(/fonts/Beriot-Light.ttf);
 }
 
 @font-face {
   font-family: "noyh";
-  src: url(fonts/noyh-slim-bold.otf);
+  src: url(/fonts/noyh-slim-bold.otf);
 }
 
 @font-face {
   font-family: "open";
-  src: url(fonts/open-sans-italic.ttf);
+  src: url(/fonts/Beriot-Light.ttf);
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 ul {
   list-style-type: none;
@@ -46,55 +50,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-section {
-  padding: 4rem 1rem;
-}
-
-/* syntaxe */
-
-.syntaxe {
-  display: flex;
-}
-
-.syntaxe article:nth-child(2) {
-  margin-top: 5rem;
-}
-
-/* Variables */
-
-.variable {
-  background-color: #38d2d7;
-  display: flex;
-  justify-content: space-around;
-}
-
-.variable article:nth-child(1) {
-  align-self: center;
-}
-
-/* OPERATEUR */
-
-.operateur {
-  background-color: #f2f2f2;
-}
-
-.operateur-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  row-gap: 2rem;
-}
-
-.operateur-tableau {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.operateur p {
-  height: 4.5rem;
-}
-
 table {
   border-collapse: collapse;
   margin-top: 1.5rem;
@@ -107,7 +62,7 @@ td {
 
 p {
   font-size: 1rem;
-  font-family: "open";
+  font-family: "Nunito", sans-serif;
 }
 
 h3 {
@@ -123,56 +78,8 @@ h4 {
   font-family: "beriot-bold";
 }
 
-.constante {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.exempleconstante {
-  align-self: center;
-}
-
-/* CONDITIONS TABLEAUX BOUCLES FONCTIONS */
-
-.section-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  grid-auto-flow: dense;
-}
-
-.section-grid h2 {
-  font-family: "beriot-bold";
-  margin-bottom: 2rem;
-  font-size: 3rem;
-}
-
-.conditions-section {
-  background: #f2f2f2;
-}
-
-.tableaux-section {
-  background: #38d2d7;
-}
-
-.boucles-section {
-  background: white;
-}
-
-.fonctions-section {
-  background: #f2f2f2;
-}
-
-.text {
-  font-family: "open";
-  font-size: 1rem;
-}
-
-.code {
-  background: lightgray;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
+section {
+  padding: 4rem 1rem;
 }
 
 /* HEADER */
@@ -199,6 +106,7 @@ button {
   font-size: 3rem;
   padding-right: 15vw;
 }
+
 .menu-responsive {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -225,6 +133,7 @@ button {
 }
 
 /* couleur des carrés du menu burger */
+
 .black {
   background: #231f20;
 }
@@ -263,13 +172,15 @@ button {
 }
 
 .header-responsive-bis p {
-  font-family: "open";
+  font-family: "Nunito", sans-serif;
   font-size: 1.4rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 2rem;
   text-align: justify;
 }
+
+/* FOOTER */
 
 footer {
   height: 15vh;
@@ -287,7 +198,7 @@ footer {
 }
 
 .developpeurs span {
-  font-family: "open";
+  font-family: "Nunito", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -307,39 +218,82 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .syntaxe {
-    display: flex;
-    flex-direction: column;
-  }
-  .syntaxe article {
-    margin-left: 1rem;
-  }
-  .variable {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+/* SYNTAXE VARIABLES OPERATEURS CONSTANTES  */
 
-  .variable p {
-    margin-right: 1rem;
-  }
-
-  .constante {
-    display: flex;
-    flex-direction: column;
-  }
-  .constante article {
-    margin-right: 1rem;
-  }
+.variables-section {
+  background-color: #38d2d7;
 }
 
-@media screen and (min-width: 768px) {
+.operateur-section {
+  background-color: #f2f2f2;
+}
+
+.operateur-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 2rem;
+}
+
+.operateur-tableau {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.operateur-section p {
+  height: 4.5rem;
+}
+
+/* CONDITIONS TABLEAUX BOUCLES FONCTIONS */
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-auto-flow: dense;
+  row-gap: 2rem;
+}
+
+.section-grid h2 {
+  font-family: "beriot-bold";
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.conditions-section {
+  background: #38d2d7;
+}
+
+.tableaux-section {
+  background: #f2f2f2;
+}
+
+.fonctions-section {
+  background: #38d2d7;
+}
+
+.text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+
+.code {
+  background: lightgray;
+  margin: 2rem 0.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
   section {
     padding: 4rem 5rem;
   }
+
   .section-grid {
     display: grid;
     grid-template-columns: 60% 40%;
+    grid-gap: 2rem;
   }
 
   .operateur-grid {
@@ -348,6 +302,32 @@ footer {
     justify-items: left;
     row-gap: 2rem;
     column-gap: 2rem;
+  }
+
+  /* INVERSER L'ORDRE ET LA TAILLE DES BLOCS EN GRID*/
+
+  .variables-section {
+    grid-template-columns: 40% 60%;
+  }
+
+  .variables-section .text {
+    grid-column: 2;
+  }
+
+  .variables-section .code {
+    grid-column: 1;
+  }
+
+  .constantes-section {
+    grid-template-columns: 40% 60%;
+  }
+
+  .constantes-section .text {
+    grid-column: 2;
+  }
+
+  .constantes-section .code {
+    grid-column: 1;
   }
 
   .tableaux-section {
@@ -375,7 +355,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .responsive {
     display: none;
   }
@@ -399,6 +379,7 @@ footer {
   .container-image img {
     width: 20rem;
   }
+
   .menu {
     display: flex;
   }
@@ -445,7 +426,7 @@ footer {
 
   .main-paragraphe {
     width: 40vw;
-    font-family: "open";
+    font-family: "Nunito", sans-serif;
     margin-top: 9vh;
     margin-bottom: 9vh;
     font-size: 1.35rem;
@@ -485,7 +466,7 @@ footer {
 
   .card-paragraphe {
     color: white;
-    font-family: "open";
+    font-family: "Nunito", sans-serif;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
     font-size: 1rem;
@@ -495,14 +476,28 @@ footer {
   .developpeurs {
     font-size: 3rem;
   }
+
   .developpeurs span {
     font-size: 1.5rem;
   }
 }
+
 .developpeurs span :hover {
   font-size: 2rem;
   color: #13b8be;
 }
+
 .copyright {
   font-size: 1rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

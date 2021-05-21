@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Php</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Ancre haut de page -->
@@ -33,15 +34,25 @@
               <span><i class="fas fa-bars"></i></span>
             </button>
           </div>
+
+          <!-- class ancre pour le JS -->
           <ul class="menu-responsive display-none">
-            <li class="black"><a href="#syntaxe">La syntaxe</a></li>
-            <li class="blue"><a href="#variables">Les variables</a></li>
-            <li class="turquoise"><a href="#operateurs">Les opérateurs</a></li>
-            <li class="soft-blue"><a href="#constantes">Les constantes</a></li>
-            <li class="soft-blue"><a href="#conditions">Les conditions</a></li>
-            <li class="turquoise"><a href="#tableaux">Les tableaux</a></li>
-            <li class="blue"><a href="#boucles">Les boucles</a></li>
-            <li class="black"><a href="#fonctions">Les fonctions</a></li>
+            <li class="black ancre"><a href="#syntaxe">La syntaxe</a></li>
+            <li class="blue ancre"><a href="#variables">Les variables</a></li>
+            <li class="turquoise ancre">
+              <a href="#operateurs">Les opérateurs</a>
+            </li>
+            <li class="soft-blue ancre">
+              <a href="#constantes">Les constantes</a>
+            </li>
+            <li class="soft-blue ancre">
+              <a href="#conditions">Les conditions</a>
+            </li>
+            <li class="turquoise ancre">
+              <a href="#tableaux">Les tableaux</a>
+            </li>
+            <li class="blue ancre"><a href="#boucles">Les boucles</a></li>
+            <li class="black ancre"><a href="#fonctions">Les fonctions</a></li>
           </ul>
         </div>
 
@@ -122,8 +133,8 @@
 
     <!-- SYNTAXE -->
 
-    <section id="syntaxe" class="syntaxe">
-      <article>
+    <section id="syntaxe" class="syntaxe-section section-grid">
+      <article class="text">
         <h3>La syntaxe</h3>
         <p>
           Le code PHP est délimité par la balise d’ouverture &#60;?php et de
@@ -137,7 +148,9 @@
           On retrouve aussi un point-virgule ; avant la balise fermante afin de
           marquer la fin de l’instruction.
         </p>
-        <p>Il existe aussi d’autre balises PHP par exemple < ? ?>, <% %>.</p>
+        <p>
+          Il existe aussi d’autre balises PHP par exemple &#60; ? ?>, &#60;% %>.
+        </p>
       </article>
 
       <article class="code">
@@ -152,8 +165,7 @@
     </section>
 
     <!-- VARIABLE -->
-
-    <section id="Variables" class="variable">
+    <section id="variables" class="variables-section section-grid">
       <article class="code">
         <code>
           &#60; ?php<br />
@@ -164,10 +176,12 @@
         <p>Sa variable est : Clémentine.</p>
       </article>
 
-      <article>
+      <article class="text">
         <h3>Les variables</h3>
-        <p>Une variable est une information qui existe tant que la page est</p>
-        <p>en cours de génération.</p>
+        <p>
+          Une variable est une information qui existe tant que la page est en
+          cours de génération.
+        </p>
         <p>Une fois la page générée, toutes les variables sont supprimées.</p>
         <p>Une variable est toujours constituée de deux éléments :</p>
         <p>Un nom : Il servira à reconnaître la variable.</p>
@@ -192,31 +206,29 @@
         <br />
         <p>
           - Les nombres décimaux appelé <strong>float</strong> : Nombre a
-          virgule mais ils doivent être
+          virgule mais ils doivent être écrit avec un point (177.65)
         </p>
-        <p>écrit avec un point (177.65)</p>
         <br />
         <p>
           - Les booléens appelé <strong>bool</strong> : Cette variables permet
           de stocker une information
         </p>
         <p>
-          soit vrai soit fausse. On écrira true si celle-ci est vrai et false
+          soit vrai soit fausse. On écrira true si celle-ci est vrai et false si
+          celle-ci est fausse
         </p>
-        <p>si celle-ci est fausse</p>
         <br />
         <p>
           - Rien aussi appelé <strong>NULL</strong> : On l’utilise quand on a
-          besoin de préciser
+          besoin de préciser qu’une variable est vide.
         </p>
-        <p>qu’une variable est vide.</p>
       </article>
     </section>
 
     <!-- OPERATEUR -->
 
-    <section id="operateurs" class="operateur">
-      <article>
+    <section id="operateurs" class="operateur-section">
+      <article class="text">
         <h3>Les opérateurs</h3>
         <div class="operateur-grid">
           <div class="operateur-tableau">
@@ -351,22 +363,22 @@
                 <td>$a !== $b</td>
               </tr>
               <tr>
-                <td>< ></td>
+                <td>&#60; ></td>
                 <td>
                   Différence en valeur<br />
                   Comme !=
                 </td>
-                <td>$a < > $b</td>
+                <td>$a &#60; > $b</td>
               </tr>
               <tr>
-                <td><</td>
+                <td>&#60;</td>
                 <td>Infériorité stricte</td>
-                <td>$a < $b</td>
+                <td>$a &#60; $b</td>
               </tr>
               <tr>
-                <td><=</td>
+                <td>&#60;=</td>
                 <td>Infériorité ou égalité</td>
-                <td>$a <= $b</td>
+                <td>$a &#60;= $b</td>
               </tr>
               <tr>
                 <td>></td>
@@ -423,9 +435,9 @@
                 <td>$a !=</td>
               </tr>
               <tr>
-                <td>< ></td>
+                <td>&#60; ></td>
                 <td>Inégalité</td>
-                <td>$a < > $b</td>
+                <td>$a &#60; > $b</td>
               </tr>
 
               <tr>
@@ -444,8 +456,8 @@
 
     <!-- CONSTANTE -->
 
-    <section id="constantes" class="constante">
-      <article>
+    <section id="constantes" class="constantes-section section-grid">
+      <article class="text">
         <h3>Les constantes</h3>
         <p>On se sert des constantes pour définir une valeur simple.</p>
         <p>Elles ne peuvent pas être modifiée pendant l’exécution du script.</p>
@@ -464,10 +476,8 @@
         <h4>Constante magique</h4>
         <p>
           Il existe neuf constantes magiques. Leur valeur change en fonction
-        </p>
-        <p>d’où elles sont utilisées dans le script. On les reconnait par</p>
-        <p class="last">
-          leurs deux underscores au début et à la fin de celle-ci.
+          d’où elles sont utilisées dans le script. On les reconnait par leurs
+          deux underscores au début et à la fin de celle-ci.
         </p>
 
         <table>
@@ -597,11 +607,11 @@
             Il existe deux types de tableaux :
             <ul>
               <li>
-                les tableaux numérotés : chaque ligne est identifiée par une clé
-                numérotée. La numérotation commence à partir de 0 ;
+                - les tableaux numérotés : chaque ligne est identifiée par une
+                clé numérotée. La numérotation commence à partir de 0
               </li>
               <li>
-                les tableaux associatifs : chaque ligne est identifiée par une
+                - les tableaux associatifs : chaque ligne est identifiée par une
                 courte chaîne de texte.
               </li>
             </ul>
@@ -649,11 +659,11 @@
             Les deux principaux types de boucles sont :
             <ul>
               <li>
-                while : à utiliser de préférence lorsqu'on ne sait pas par
+                - while : à utiliser de préférence lorsqu'on ne sait pas par
                 avance combien de fois la boucle doit être répétée ;
               </li>
               <li>
-                for : à utiliser lorsqu'on veut répéter des instructions un
+                - for : à utiliser lorsqu'on veut répéter des instructions un
                 nombre précis de fois.
               </li>
             </ul>
@@ -727,15 +737,22 @@
     <footer>
       <p class="developpeurs">
         Développeurs
-        <span><a href="https://github.com/margauxc25">Margaux Coppi -</a> </span
+        <span
+          ><a href="https://github.com/margauxc25" target="_blank"
+            >Margaux Coppi -</a
+          > </span
         ><span>
-          <a href="https://github.com/DorceRaphael">Raphaël Dorce - </a></span
+          <a href="https://github.com/DorceRaphael" target="_blank"
+            >Raphaël Dorce -
+          </a></span
         ><span
-          ><a href="https://github.com/manonmille-github"> Manon Mille</a></span
+          ><a href="https://github.com/manonmille-github" target="_blank">
+            Manon Mille</a
+          ></span
         >
       </p>
       <p class="copyright">&copy; 2021 MRM - All Rights Reserved</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="/javascript/script.js"></script>
   </body>
 </html>
